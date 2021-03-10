@@ -1,0 +1,567 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --acent-color: #2196f3;
+  --main-color: #ffffff;
+  --btn-back-color: #188ce8;
+  --footer-backgroun-color: #2f303a;
+  --usually-text-color: #757575;
+  --headline-color: #212121;
+  --secondary-back-color: #2f303a;
+  --third-back-color: #f5f4fa;
+  --main-black-color: #000000;
+  --footer-links-color: rgba(255, 255, 255, 0.6);
+  --section-pt: 94px;
+  --section-pb: 94px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-list {
+  margin-top: 20px;
+}
+
+body {
+  font-family: var(--main-font);
+  background: var(--main-color);
+  /* width: 1600px;*/
+}
+
+.header-accent {
+  color: var(--main-black-color);
+}
+
+.footer-accent {
+  color: var(--main-color);
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--headline-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--acent-color);
+}
+
+.current {
+  color: var(--acent-color);
+}
+
+.contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--usually-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--acent-color);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/*.mail {
+  margin-right: 50px;
+}*/
+
+.location {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.our-job-image {
+  background: var(--main-color);
+}
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--headline-color);
+}
+
+.location {
+  width: 231px;
+  height: 21px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 9px;
+}
+
+.our-job-image {
+  background: var(--main-color);
+}
+
+.team {
+  background: var(--third-back-color);
+}
+
+.contacts-link-footer {
+  width: 231px;
+  height: 21px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--footer-links-color);
+}
+
+.contacts-link-footer:hover,
+.contacts-link-footer:focus {
+  color: var(--acent-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*============== MAIN HEADER ==============*/
+
+.main-header {
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--acent-color);
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  margin-left: auto;
+}
+
+/*============== END MAIN HEADER ==============*/
+
+/*============== HERO PAGE 1 ==============*/
+
+.hero {
+  background: var(--secondary-back-color);
+}
+
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--main-color);
+  background: var(--acent-color);
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  margin: 0 auto;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--btn-back-color);
+}
+
+.advertising-main {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.advertising-name {
+  max-width: 696px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+/*============== END HERO PAGE 1 ==============*/
+
+/*============== ABOUT ==============*/
+
+.about {
+  background: var(--main-color);
+  padding-top: var(--section-pt);
+}
+
+.about-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.about-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.about-main-name {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--headline-color);
+  width: 270px;
+  height: 16px;
+}
+
+.about-us {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--usually-text-color);
+  width: 270px;
+  height: 75px;
+}
+
+/*============== END ABOUT ==============*/
+
+/*============== WAWD ==============*/
+
+.our-job-image {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+
+.our-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.our-item {
+  flex-basis: calc(100% / 3-30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/*============== END WAWD ==============*/
+
+/*============== TEAM ==============*/
+
+.team {
+  background: var(--third-back-color);
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--headline-color);
+  margin-bottom: 50px;
+  margin: auto o;
+}
+
+.team-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background: var(--main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--headline-color);
+  margin-bottom: 10px;
+}
+
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.team-member-skills {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--usually-text-color);
+}
+
+/*============== END TEAM ==============*/
+
+/*============== HERO PAGE 2 ==============*/
+
+.hero-pg2 {
+  background: var(--main-color);
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+
+.list-margin {
+  margin-left: auto 0;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: center;
+  margin-left: -8px;
+  margin-bottom: 50px;
+}
+
+.hero-item {
+  margin-left: 8px;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--headline-color);
+  cursor: pointer;
+  background: var(--third-back-color);
+  min-width: 128px;
+  height: 38px;
+  margin: 0 auto;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--main-color);
+  background-color: var(--acent-color);
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+/*============== END HERO PAGE 2 ==============*/
+
+/*============== SERVICES ==============*/
+
+.services-link {
+  background: var(--main-color);
+}
+
+.services-link-text {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+.services-name {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--headline-color);
+}
+
+.services-item {
+  flex-basis: calc(100% / 9 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background: var(--main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.about-services {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--usually-text-color);
+}
+
+/*============== END SERVICES ==============*/
+
+/*============== LOGO FOOTER ==============*/
+
+.logotype-footer {
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 1688px;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--acent-color);
+}
+
+/*============== END LOGO FOOTER ==============*/
+
+footer {
+  background-color: var(--footer-backgroun-color);
+}
+
+.contacts-link-footer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--footer-links-color);
+}
+
+.contacts-link-footer:hover,
+.contacts-link-footer:focus {
+  color: var(--acent-color);
+}
+
+.contacts-link-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-link-footer:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
