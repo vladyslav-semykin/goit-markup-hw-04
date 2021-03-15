@@ -32,32 +32,19 @@
                     </li>
                 </ul>
             </nav>
-            <div class="contacts-container">
-                <ul class="contacts-list list">
-                    <li class="contacts-item">
-                        <a class="custom link" href="">
-                            <ul class="header-contacts-list list">
-                                <li class="header-contacts-item">                                     
-                                        <a class="contacts-link main-link mail link" href="mailto:info@devstudio.com"><svg width="16" height="12" class="header-contacts-icon">
-                                            <use href="./images/sprite.svg#icon-envelope"></use>
-                                        </svg>info@devstudio.com</a>
-                                </li>
-                            </ul>
-                        </a>
-                    </li>    
-                    <li class="contacts-item">
-                        <a class="custom link" href="">
-                            <ul class="header-contacts-list list">
-                                <li class="header-contacts-item">
-                                    <a class="contacts-link main-link link" href="tel:+380961111111"><svg width="10" height="16" class="header-contacts-icon">
-                                        <use href="./images/sprite.svg#icon-smartphone"></use>
-                                    </svg>+38 096 111 11 11</a>
-                                </li>
-                            </ul>
-                        </a>
-                    </li>
-                </ul>
-            </div>           
+            <ul class="contacts-list list">
+                <li class="header-contacts-item">                     
+                    <a class="contacts-link main-link mail link" href="mailto:info@devstudio.com">
+                        <svg width="16" height="12" class="header-contacts-icon">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="header-contacts-item">
+                    <a class="contacts-link main-link link" href="tel:+380961111111"><svg width="10" height="16" class="header-contacts-icon">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -75,11 +62,11 @@
             <div class="container">
                 <ul class="list about-list">
                     <li class="about-item">
-                        <a class="about-link link" href="">
+                        <div class="about-link link">
                             <svg class="about-icon">
                                 <use href="./images/sprite.svg#icon-antenna"></use>
                             </svg>
-                        </a>
+                        </div>
                         <h3 class="about-main-name">Внимание к деталям</h3>
                         <p class="about-us">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.</p>
@@ -345,56 +332,48 @@
         </section>
     </main>
     <footer>
-        <div class="main-footer container">
-            <ul class="social-footer-list list">
-                <li>
-                    <a class="logotype-footer link" href="" lang="en">Web<span class="footer-accent">Studio</span></a>
-                </li>
-                <li>
-                    <address class="address address-list">
-                        <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-                        <a class="contacts-link-footer link" href="mailto:info@example.com">info@example.com</a>
-                        <a class="contacts-link-footer link" href="tel:+380991111111">+38 099 111 11 11</a>
-                    </address>
-                </li>
-            </ul>
-            <ul class="social-footer-list second-list list">
-                <li>
-                    <p class="social-footer-name">присоединяйтесь</p>
-                </li>
-                <li class="social-footer-item">
-                    <ul class="footer-icon-list list">
-                        <li class=" ">
-                            <a class="social-footer-link link" href="">
-                                <svg class="social-footer-icon">
-                                    <use href="./images/sprite.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-icon-item">
-                            <a class="social-footer-link link" href="">
-                                <svg class="social-footer-icon">
-                                    <use href="./images/sprite.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-icon-item">
-                            <a class="social-footer-link link" href="">
-                                <svg class="social-footer-icon">
-                                    <use href="./images/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-icon-item">
-                            <a class="social-footer-link link" href="">
-                                <svg class="social-footer-icon">
-                                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="footer-container container">
+            <div class="main-footer">
+                <a class="logotype-footer link" href="" lang="en">Web<span class="footer-accent">Studio</span></a>
+                <address class="address address-list">
+                    <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+                    <a class="contacts-link-footer link" href="mailto:info@example.com">info@example.com</a>
+                    <a class="contacts-link-footer link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </address>
+            </div>
+            <div class="second-footer">   
+                <p class="social-footer-name">присоединяйтесь</p>
+                <ul class="footer-icon-list list">
+                    <li class="footer-icon-item">
+                        <a class="social-footer-link link" href="">
+                            <svg class="social-footer-icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-footer-link link" href="">
+                            <svg class="social-footer-icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-footer-link link" href="">
+                            <svg class="social-footer-icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-footer-link link" href="">
+                            <svg class="social-footer-icon">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>  
+            </div>
         </div>
     </footer>
 </body>

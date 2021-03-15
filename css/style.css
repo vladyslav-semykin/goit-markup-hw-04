@@ -68,7 +68,7 @@ img {
 body {
   font-family: var(--main-font);
   background: var(--main-color);
-  /*width: 1600px;*/
+  /* width: 1600px;*/
 }
 
 .header-accent {
@@ -104,18 +104,9 @@ body {
   color: var(--usually-text-color);
 }
 
-/*.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--acent-color);
-}*/
-
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-
-/*.mail {
-  margin-right: 50px;
-}*/
 
 .location {
   font-weight: 400;
@@ -211,24 +202,10 @@ body {
   padding-bottom: 32px;
 }
 
-.contacts-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contacts-list:hover,
-.contacts-list:focus {
-  color: var(--acent-color);
-  fill: var(--acent-color);
-}
-
 .logo {
   margin-right: 93px;
-
   padding-top: 24px;
   padding-bottom: 25px;
-
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -240,38 +217,25 @@ body {
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
-
 .contacts-list {
+  display: inline-flex;
+  align-items: baseline;
   margin-left: auto;
 }
 
-.contacts-item {
+.header-contacts-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-contacts-list {
-  display: flex;
-}
-
-.header-contacts-item {
-  width: 161px;
-  height: 16px;
-}
-
-.header-contacts-list:not(:last-child) {
+.header-contacts-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .header-contacts-icon {
   margin-right: 10px;
   fill: var(--contacts-color);
-}
-
-.header-contacts-item {
-  max-width: 161px;
-  max-height: 16px;
 }
 
 .main-link:hover,
@@ -295,7 +259,6 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/background-hero.jpg");
-  max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -540,7 +503,10 @@ body {
 .customers-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.customers-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .customers-list-link {
@@ -755,10 +721,15 @@ footer {
   margin-bottom: 9px;
 }
 
+.footer-container {
+  display: inline-flex;
+}
+
 .main-footer {
-  display: flex;
+  margin-right: 70px;
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
 }
 
 .social-footer-name {
@@ -779,14 +750,6 @@ footer {
 
 .social-footer-list:not(:last-child) {
   margin-right: 70px;
-}
-
-.second-list {
-  flex-direction: row;
-  justify-content: space-between;
-  width: 206px;
-  height: 80px;
-  padding-top: 12px;
 }
 
 .footer-icon-list {
@@ -815,4 +778,8 @@ footer {
 .social-footer-icon {
   width: 20px;
   height: 20px;
+}
+
+.second-footer {
+  padding-top: 72px;
 }
