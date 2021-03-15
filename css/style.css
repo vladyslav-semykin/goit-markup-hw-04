@@ -214,6 +214,13 @@ body {
 .contacts-list {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.contacts-list:hover,
+.contacts-list:focus {
+  color: var(--acent-color);
+  fill: var(--acent-color);
 }
 
 .logo {
@@ -248,28 +255,33 @@ body {
   display: flex;
 }
 
+.header-contacts-item {
+  width: 161px;
+  height: 16px;
+}
+
 .header-contacts-list:not(:last-child) {
   margin-right: 30px;
 }
 
 .header-contacts-icon {
-  fill: var(--contacts-color);
   margin-right: 10px;
+  fill: var(--contacts-color);
 }
 
-.header-contacts-icon:hover,
-.header-contacts-icon:focus {
-  fill: var(--acent-color);
-}
-
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-  fill: var(--acent-color);
+.header-contacts-item {
+  max-width: 161px;
+  max-height: 16px;
 }
 
 .main-link:hover,
 .main-link:focus {
   color: var(--acent-color);
+}
+
+.header-contacts-icon:hover,
+.header-contacts-icon:focus {
+  fill: var(--acent-color);
 }
 
 /*============== END MAIN HEADER ==============*/
@@ -282,7 +294,7 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/background-hero.jpg");
+    url("../images/background-hero.jpg");
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
