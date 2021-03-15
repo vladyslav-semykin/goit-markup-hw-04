@@ -229,6 +229,13 @@ body {
   justify-content: space-between;
 }
 
+.header-contacts-item:hover .header-contacts-link,
+.header-contacts-item:focus .header-contacts-link {
+  background-color: var(--main-color);
+  fill: var(--acent-color);
+  color: var(--acent-color);
+}
+
 .header-contacts-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -238,14 +245,18 @@ body {
   fill: var(--contacts-color);
 }
 
-.main-link:hover,
-.main-link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--acent-color);
 }
 
-.header-contacts-icon:hover,
-.header-contacts-icon:focus {
-  fill: var(--acent-color);
+.header-contacts-link:hover .header-contacts-icon,
+.header-contacts-link:focus .header-contacts-icon,
+.contacts-link:hover .header-contacts-icon,
+.contacts-link:focus .header-contacts-icon {
+  fill: currentColor;
 }
 
 /*============== END MAIN HEADER ==============*/
@@ -663,8 +674,8 @@ body {
   background: var(--main-color);
   border: 1px solid var(--service-item-color);
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12), 0px 0px 4px rgba(0, 0, 0, 0.06),
+    0px 0px 6px rgba(0, 0, 0, 0.16);
 }
 
 .about-services {
@@ -722,7 +733,8 @@ footer {
 }
 
 .footer-container {
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .main-footer {
