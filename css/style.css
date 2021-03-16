@@ -102,6 +102,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--usually-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .contacts-item:not(:last-child) {
@@ -691,11 +693,6 @@ body {
 /*============== LOGO FOOTER ==============*/
 
 .logotype-footer {
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 1688px;
-
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -733,15 +730,15 @@ footer {
 }
 
 .footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
 
 .main-footer {
   margin-right: 70px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  align-items: baseline;
 }
 
 .social-footer-name {
@@ -790,8 +787,4 @@ footer {
 .social-footer-icon {
   width: 20px;
   height: 20px;
-}
-
-.second-footer {
-  padding-top: 72px;
 }
